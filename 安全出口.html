@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>安全出口验证</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>欢迎来到安全出口</h1>
+    <p>请输入你的名字:</p>
+    <input type="text" id="nameInput" placeholder="你的名字">
+    <button onclick="showMessage()">提交</button>
+    <p id="message"></p>
+
+    <script>
+        function showMessage() {
+            var name = document.getElementById('nameInput').value;
+            var message = name + "，验证为家人，欢迎来到安全出口🫂🫵🏻🫂！！！";
+            document.getElementById('message').textContent = message;
+        }
+    </script>
+</body>
+</html>
